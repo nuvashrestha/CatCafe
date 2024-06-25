@@ -1,0 +1,52 @@
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: auto;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 5px 20px 0px 20px;
+    justify-content: center;
+}
+
+.home-body {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    /* This adds space between the items */
+    gap: 100px;
+
+    /* This centers the footer */
+    justify-content: center;
+}
+
+.footer-heading {
+    font-weight: bold;
+}
