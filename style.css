@@ -1,0 +1,376 @@
+body {
+    /* background-color: rgb(237, 206, 250); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+/* NAVBAR */
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgb(237, 206, 250);
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.navbar ul li {
+    margin: auto;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+
+.navbar ul li a:visited {
+    color: #333;
+}
+
+.navbar ul li a:hover {
+    color: white;
+
+}
+
+/* HOME */
+.home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+
+}
+
+.home-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#home-img {
+    width: 1000px;
+    height: auto;
+}
+
+.cat-of-the-month {
+    background-color: rgb(211, 157, 211);
+    max-width: 800px;
+    text-align: center;
+    background-color: #f3e4f5;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 70px auto;
+}
+
+#cat-of-the-month {
+    width: 250px;
+    height: auto;
+
+}
+
+/* RESERVATION */
+.reservation-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.reservation-form {
+    max-width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form td {
+    padding: 10px;
+}
+
+.reservation-form .submit-button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.reservation-form .submit-button:hover {
+    background-color: #727171;
+}
+
+.input-field {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.input-field:focus {
+    border-color: #ce8fd6;
+    outline: none;
+}
+
+.input-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* FAQ */
+.faq-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    margin-bottom: 20px;
+}
+
+.faq-answer {
+    display: grid;
+    margin-left: 20px;
+    padding: 10px;
+    border-left: 2px solid #8a3ab9;
+}
+
+/* about */
+/* .about-body {
+    max-width: 800px;
+    align-content: center;
+    text-align: center;
+    border-radius: 50px;
+    margin: 65px auto 0 auto;
+    color: white;
+    background-color: rgb(237, 206, 250);
+} */
+.about-body {
+    width: 100%; /* Ensure it spans the entire width */
+    min-height: 100vh; /* Ensure it fills the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    color: white; /* Text color */
+    background-color: rgb(237, 206, 250); /* Background color */
+}
+
+.about-section {
+    width: 90%; /* Adjust width as needed */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px 0px 20px;
+    margin: 20px 20px 0px 20px; /* Add margin to separate sections */
+}
+
+.about-section ul li {
+    list-style-type: none;
+}
+
+.about-section-who-we-are {
+    background-image: url('who-we-are.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.about-section-our-vision {
+    background-image: url('our-vision.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px
+}
+
+.about-section-rules {
+    background-image: url('rules.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px
+}
+
+/* team */
+.team-body {
+    max-width: 800px;
+    align-content: center;
+    text-align: center;
+    background-color: #f3e4f5;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 70px auto;
+}
+
+/* MENU */
+.menu-body {
+    max-width: 800px;
+    margin: 70px auto 0px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    color: #666;
+    margin-top: 5px;
+}
+
+.allergy-warning {
+    color: #333;
+    margin: 20px;
+    font-size: x-small;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#menu-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer-container1 {
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px 10px 10px;
+    align-items: center;
+}
+
+.footer-container2 {
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer-container3 {
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(67, 65, 68);
+    color: white;
+    width: 100%;
+}
+
+.footer-heading {
+    text-align: center;
+    /* Center align the text */
+    margin-bottom: 5px;
+    /* Add margin-bottom for spacing */
+}
+
+.footer-info a img {
+    width: 20px;
+    height: auto;
+}
+
+.footer-info {
+    margin: 0 10px;
+}
+
+.footer-info2 {
+    margin: 0 10px;
+    display: inline;
+    font-size: 13px;
+}
+
+.footer-info2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info2 a:hover {
+    text-decoration: underline;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer input[type="email"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ad7979;
+    width: 100%;
+}
+
+footer input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #555;
+}

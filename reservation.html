@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow-t & Mingle Cafe | Reservation</title>
+    <link rel="icon" href="icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="body">
+        <!--navbar-->
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="menu.html">Cafe Menu</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="reservation-body">
+            <h2>How Cat Cafe Works</h2>
+            <p>Our cat cafe is a place where you can enjoy the company of cats while you eat and drink!</p>
+            <h3>Our Cats</h3>
+            <p>We have a variety of friendly and playful cats that are eager to meet you. All our cats are well-cared
+                for, regularly checked by a vet, and have a clean bill of health.</p>
+            <h3>House Rules</h3>
+            <ul>
+                <li>Be gentle and respectful to our cats.</li>
+                <li>Do not feed the cats human food.</li>
+                <li>Keep noise levels to a minimum to avoid startling the cats.</li>
+                <li>Children under 18 must be accompanied by an adult.</li>
+            </ul>
+            <h3>How Reservations Work</h3>
+            <p>To ensure a spot at our cat cafe, we recommend making a reservation ahead of time, especially during peak
+                hours. Follow these simple steps to make a reservation:</p>
+            <ol>
+                <li>Fill out the reservation form below with your details.</li>
+                <li>Select a suitable date and time for your visit.</li>
+                <li>Submit the form and wait for a confirmation email from us.</li>
+                <li>On the day of your visit, show your confirmation email at the entrance.</li>
+            </ol>
+            <h2>Make A Reservation</h2>
+            <div class="reservation-container1">
+                <form class="reservation-form" action="insert.php" method="post">
+                    <table>
+                        <tr>
+                            <td class="input-label">User ID:</td>
+                            <td><input type="text" class="input-field" placeholder="UserID" name="userid" required></td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">First name:</td>
+                            <td><input type="text" class="input-field" placeholder="First name" name="f_name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">Last name:</td>
+                            <td><input type="text" class="input-field" placeholder="Last name" name="l_name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">Time:</td>
+                            <td><input type="time" class="input-field" placeholder="Time" name="time" min="09:00"
+                                    max="17:00" required></td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">Date:</td>
+                            <td> <input type="date" class="input-field" placeholder="Date" name="date" min="2024-07-01"
+                                    max="2026-12-31" required></td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">Email:</td>
+                            <td> <input type="email" class="input-field" placeholder="Email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">Phone Number:</td>
+                            <td> <input type="tel" class="input-field" placeholder="123-456-7890" name="number"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="input-label">Package:</td>
+                            <td>
+                                <input type="radio" id="packageA" name="package" value="A" required>
+                                <label for="packageA">Package A</label><br>
+                                <input type="radio" id="packageB" name="package" value="B">
+                                <label for="packageB">Package B</label><br>
+                                <input type="radio" id="packageC" name="package" value="C">
+                                <label for="packageC">Package C</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" class="submit-button" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="reservation-container2">
+                <ul class="package-list">
+                    <li>
+                        <strong>Package A:</strong> Includes 1 hour of cat playtime and a complimentary drink.
+                    </li>
+                    <li>
+                        <strong>Package B:</strong> Includes 1.5 hours of cat playtime, a snack, and a souvenir photo
+                        with your favorite cat.
+                    </li>
+                    <li>
+                        <strong>Package C:</strong> Includes 2 hours of cat playtime, a meal (choice of sandwich or
+                        salad), and a souvenir cat-themed gift.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-body">
+            <h1>Frequently Asked Questions</h1>
+
+            <div class="faq-question">
+                <h3 class="faq-toggle">What is a cat cafe?</h3>
+                <div class="faq-answer">
+                    <p>A cat cafe is a cafe or coffee shop where customers can interact with cats that roam freely in
+                        the establishment. It provides a relaxing environment for cat lovers to enjoy coffee or tea
+                        while spending time with cats.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <h3 class="faq-toggle">Can I bring my own cat to the cafe?</h3>
+                <div class="faq-answer">
+                    <p>For the safety and comfort of our resident cats and other guests, we do not allow outside cats in
+                        our cafe. However, you are welcome to visit and spend time with our friendly resident cats!</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <h3 class="faq-toggle">Do I need to make a reservation to visit?</h3>
+                <div class="faq-answer">
+                    <p>Reservations are required, they are highly recommended, especially during peak hours,
+                        to ensure you have a spot to enjoy time with our cats. You can make a reservation online through
+                        our website or by calling us.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <h3 class="faq-toggle">Are children allowed in the cat cafe?</h3>
+                <div class="faq-answer">
+                    <p>Yes, children are welcome! However, we kindly ask that children under the age of 18 are
+                        accompanied by an adult at all times to ensure the safety of our cats and other guests.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <h3 class="faq-toggle">Do you serve food and beverages?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we offer a variety of beverages and light snacks. Our menu includes coffee, tea, pastries,
+                        and other refreshments. Please note that food and drinks must be consumed in designated areas to
+                        maintain a clean and comfortable environment for our cats.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<!-- Footer -->
+<footer>
+    <div class="footer-container1">
+        <div class="footer-section">
+            <div class="footer-heading">CONTACT US</div>
+            <div class="footer-info">Phone: (123) 456-7890</div>
+            <div class="footer-info">Email: email@catcafe.com</div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-heading">ADDRESS</div>
+            <div class="footer-info">123 Cat Street</div>
+            <div class="footer-info">Cat City, FL 12345</div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-heading">CAFE HOURS</div>
+            <div class="footer-info">Mon-Fri: 9am - 5pm</div>
+            <div class="footer-info">Sat-Sun: 9am - 7pm</div>
+        </div>
+    </div>
+
+    <div class="footer-container2">
+        <div class="footer-section">
+            <div class="footer-heading">FIND US ON</div>
+            <div class="footer-info">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+                <a href="#"><img src="tiktok-icon.png" alt="Tiktok" /></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-heading">SIGN UP FOR MEOW-T & MINGLE NEWS </div>
+            <form>
+                <input type="email" name="email" placeholder="Your email address" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-container3">
+        <div class="footer-section">
+            <div class="footer-info2"><a href="privacy.html">Privacy Policy</a></div>
+            <div class="footer-info2"><a href="terms.html">Terms of Service</a></div>
+            <div class="footer-info2">Copyright 2024 Meow-t & Mingle Cafe</div>
+        </div>
+    </div>
+</footer>
+
+</html>
