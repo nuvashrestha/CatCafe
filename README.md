@@ -1,5 +1,5 @@
 Meow-t & Mingle Café Website 
-[Visit the Cat Café Website](https://nuvashrestha.github.io/CatCafe/index.html)
+[View the Cat Café Website](https://github.com/nuvashrestha/CatCafe/blob/main/index.html)
 
 Project Overview
 The Meow-t & Mingle Café website is an interactive platform designed for a cat-themed café. The website allows users to make reservations, learn about the café's resident cats, and manage their accounts. The goal of the project is to create a user-friendly interface that integrates seamlessly with a secure backend system for managing customer data and reservations.
