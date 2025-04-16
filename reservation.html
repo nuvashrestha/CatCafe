@@ -21,99 +21,113 @@
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
+
         <div class="reservation-body">
-            <h2>How Cat Cafe Works</h2>
-            <p>Our cat cafe is a place where you can enjoy the company of cats while you eat and drink!</p>
-            <h3>Our Cats</h3>
-            <p>We have a variety of friendly and playful cats that are eager to meet you. All our cats are well-cared
-                for, regularly checked by a vet, and have a clean bill of health.</p>
-            <h3>House Rules</h3>
-            <ul>
-                <li>Be gentle and respectful to our cats.</li>
-                <li>Do not feed the cats human food.</li>
-                <li>Keep noise levels to a minimum to avoid startling the cats.</li>
-                <li>Children under 18 must be accompanied by an adult.</li>
-            </ul>
-            <h3>How Reservations Work</h3>
-            <p>To ensure a spot at our cat cafe, we recommend making a reservation ahead of time, especially during peak
-                hours. Follow these simple steps to make a reservation:</p>
-            <ol>
-                <li>Fill out the reservation form below with your details.</li>
-                <li>Select a suitable date and time for your visit.</li>
-                <li>Submit the form and wait for a confirmation email from us.</li>
-                <li>On the day of your visit, show your confirmation email at the entrance.</li>
-            </ol>
-            <h2>Make A Reservation</h2>
-            <div class="reservation-container1">
-                <form class="reservation-form" action="insert.php" method="post">
-                    <table>
-                        <tr>
-                            <td class="input-label">User ID:</td>
-                            <td><input type="text" class="input-field" placeholder="UserID" name="userid" required></td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">First name:</td>
-                            <td><input type="text" class="input-field" placeholder="First name" name="f_name" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">Last name:</td>
-                            <td><input type="text" class="input-field" placeholder="Last name" name="l_name" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">Time:</td>
-                            <td><input type="time" class="input-field" placeholder="Time" name="time" min="09:00"
-                                    max="17:00" required></td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">Date:</td>
-                            <td> <input type="date" class="input-field" placeholder="Date" name="date" min="2024-07-01"
-                                    max="2026-12-31" required></td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">Email:</td>
-                            <td> <input type="email" class="input-field" placeholder="Email" name="email" required></td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">Phone Number:</td>
-                            <td> <input type="tel" class="input-field" placeholder="123-456-7890" name="number"
-                                    required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="input-label">Package:</td>
-                            <td>
-                                <input type="radio" id="packageA" name="package" value="A" required>
-                                <label for="packageA">Package A</label><br>
-                                <input type="radio" id="packageB" name="package" value="B">
-                                <label for="packageB">Package B</label><br>
-                                <input type="radio" id="packageC" name="package" value="C">
-                                <label for="packageC">Package C</label><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="submit" class="submit-button" value="Submit">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            <div class="reservation-container2">
-                <ul class="package-list">
-                    <li>
-                        <strong>Package A:</strong> Includes 1 hour of cat playtime and a complimentary drink.
-                    </li>
-                    <li>
-                        <strong>Package B:</strong> Includes 1.5 hours of cat playtime, a snack, and a souvenir photo
-                        with your favorite cat.
-                    </li>
-                    <li>
-                        <strong>Package C:</strong> Includes 2 hours of cat playtime, a meal (choice of sandwich or
-                        salad), and a souvenir cat-themed gift.
-                    </li>
+            <div class="reservation-left">
+                <h2>How Cat Cafe Works</h2>
+                <p>Our cat cafe is a place where you can enjoy the company of cats while you eat and drink!</p>
+                <h3>Our Cats</h3>
+                <p>We have a variety of friendly and playful cats that are eager to meet you. All our cats are
+                    well-cared
+                    for, regularly checked by a vet, and have a clean bill of health.</p>
+                <h3>House Rules</h3>
+                <ul>
+                    <li>Be gentle and respectful to our cats.</li>
+                    <li>Do not feed the cats human food.</li>
+                    <li>Keep noise levels to a minimum to avoid startling the cats.</li>
+                    <li>Children under 18 must be accompanied by an adult.</li>
                 </ul>
+                <h3>How Reservations Work</h3>
+                <p>To ensure a spot at our cat cafe, we recommend making a reservation ahead of time, especially during
+                    peak
+                    hours. </p>
+                <p>Follow these simple steps to make a reservation:</p>
+                <ol>
+                    <li>Fill out the reservation form below with your details.</li>
+                    <li>Select a suitable date and time for your visit.</li>
+                    <li>Submit the form and wait for a confirmation email from us.</li>
+                    <li>On the day of your visit, show your confirmation email at the entrance.</li>
+                </ol>
+            </div>
+            <div class="reservation-right">
+                <h2>Make A Reservation</h2>
+                <div class="reservation-container1">
+                    <form class="reservation-form" action="insert.php" method="post">
+                        <table>
+                            <tr>
+                                <td class="input-label">User ID:</td>
+                                <td><input type="text" class="input-field" placeholder="UserID" name="userid" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">First name:</td>
+                                <td><input type="text" class="input-field" placeholder="First name" name="f_name"
+                                        required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Last name:</td>
+                                <td><input type="text" class="input-field" placeholder="Last name" name="l_name"
+                                        required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Time:</td>
+                                <td><input type="time" class="input-field" placeholder="Time" name="time" min="09:00"
+                                        max="17:00" required></td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Date:</td>
+                                <td> <input type="date" class="input-field" placeholder="Date" name="date"
+                                        min="2024-07-01" max="2026-12-31" required></td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Email:</td>
+                                <td> <input type="email" class="input-field" placeholder="Email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Phone Number:</td>
+                                <td> <input type="tel" class="input-field" placeholder="123-456-7890" name="number"
+                                        required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="input-label">Package:</td>
+                                <td>
+                                    <input type="radio" id="packageA" name="package" value="A" required>
+                                    <label for="packageA">Package A</label><br>
+                                    <input type="radio" id="packageB" name="package" value="B">
+                                    <label for="packageB">Package B</label><br>
+                                    <input type="radio" id="packageC" name="package" value="C">
+                                    <label for="packageC">Package C</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" class="submit-button" value="Submit">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="reservation-container2">
+                    <ul class="package-list">
+                        <li>
+                            <strong>Package A:</strong> Includes 1 hour of cat playtime and a complimentary drink.
+                        </li>
+                        <li>
+                            <strong>Package B:</strong> Includes 1.5 hours of cat playtime, a snack, and a souvenir
+                            photo
+                            with your favorite cat.
+                        </li>
+                        <li>
+                            <strong>Package C:</strong> Includes 2 hours of cat playtime, a meal (choice of sandwich or
+                            salad), and a souvenir cat-themed gift.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
